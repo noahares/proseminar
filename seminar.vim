@@ -2,27 +2,34 @@ let SessionLoad = 1
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
-imap <Nul> <C-Space>
-inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
-inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
-inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
 inoremap <silent> <C-Tab> =UltiSnips#ListSnippets()
+inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
+inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
+inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
+imap <Nul> <C-Space>
+inoremap <silent> <C-L> =UltiSnips#ListSnippets()
 vnoremap  "*y
 snoremap <silent>  "_c
+snoremap <silent>  :call UltiSnips#ListSnippets()
 map  "*p
 snoremap  "_c
 omap <silent> % <Plug>(MatchitOperationForward)
 xmap <silent> % <Plug>(MatchitVisualForward)
 nmap <silent> % <Plug>(MatchitNormalForward)
+omap ,c :setlocal spell! spelllang=en_us
+xmap ,c :setlocal spell! spelllang=en_us
+nmap ,c :setlocal spell! spelllang=en_us
 nnoremap ,d :YcmShowDetailedDiagnostic
 xnoremap <silent> ,s :call UltiSnips#SaveLastVisualSelection()gvs
 snoremap <silent> ,s :call UltiSnips#ExpandSnippet()
-nmap ,c :setlocal spell! spelllang=en_us
-xmap ,c :setlocal spell! spelllang=en_us
-omap ,c :setlocal spell! spelllang=en_us
-nnoremap Q !!$SHELL
-xnoremap Q !!$SHELL
+xmap ,d :setlocal spell! spelllang=de
+omap ,d :setlocal spell! spelllang=de
+nmap ,e :setlocal spell! spelllang=en_us
+xmap ,e :setlocal spell! spelllang=en_us
+omap ,e :setlocal spell! spelllang=en_us
 onoremap Q !!$SHELL
+xnoremap Q !!$SHELL
+nnoremap Q !!$SHELL
 omap <silent> [% <Plug>(MatchitOperationMultiBackward)
 xmap <silent> [% <Plug>(MatchitVisualMultiBackward)
 nmap <silent> [% <Plug>(MatchitNormalMultiBackward)
@@ -30,11 +37,13 @@ omap <silent> ]% <Plug>(MatchitOperationMultiForward)
 xmap <silent> ]% <Plug>(MatchitVisualMultiForward)
 nmap <silent> ]% <Plug>(MatchitNormalMultiForward)
 xmap a% <Plug>(MatchitVisualTextObject)
+xmap gx <Plug>NetrwBrowseXVis
 omap <silent> g% <Plug>(MatchitOperationBackward)
 xmap <silent> g% <Plug>(MatchitVisualBackward)
 nmap <silent> g% <Plug>(MatchitNormalBackward)
-xmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
+nnoremap <SNR>60_: :=v:count ? v:count : ''
+snoremap <silent> <C-Tab> :call UltiSnips#ListSnippets()
 nnoremap <SNR>61_: :=v:count ? v:count : ''
 xmap <silent> <Plug>(MatchitVisualTextObject) <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
 onoremap <silent> <Plug>(MatchitOperationMultiForward) :call matchit#MultiMatch("W",  "o")
@@ -55,17 +64,18 @@ snoremap <C-R> "_c
 snoremap <silent> <C-H> "_c
 snoremap <silent> <Del> "_c
 snoremap <silent> <BS> "_c
-snoremap <silent> <C-Tab> :call UltiSnips#ListSnippets()
+snoremap <silent> <C-L> :call UltiSnips#ListSnippets()
 map <C-P> "*p
 vnoremap <C-C> "*y
 nmap <F12> :LLPStartPreview
 inoremap <expr> 	 pumvisible() ? "\" : "\	"
+inoremap <silent>  =UltiSnips#ListSnippets()
 inoremap    /<++>"_c4l
-inoremap ,m \(\)<++>?\i
-inoremap ,g \centering\includegraphics[width=\textwidth]{media/
-inoremap ,f \begin{frame}{\secname\ | \subsecname}\end{frame}<++>2kA
-inoremap ,d \begin{definitionblock}\end{definitionblock}<++>2kA
 inoremap ,i \begin{itemize}\item \end{itemize}<++>2kA
+inoremap ,d \begin{definitionblock}\end{definitionblock}<++>2kA
+inoremap ,f \begin{frame}{\secname\ | \subsecname}\end{frame}<++>2kA
+inoremap ,g \centering\includegraphics[width=\textwidth]{media/
+inoremap ,m \(\)<++>?\i
 inoremap <silent> ,s =UltiSnips#ExpandSnippet()
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -249,12 +259,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 252 - ((59 * winheight(0) + 32) / 64)
+let s:l = 276 - ((48 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-252
-normal! 016|
+276
+normal! 0
 lcd ~/documents/repos/proseminar
 wincmd w
 argglobal
@@ -383,19 +393,22 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 4 - ((3 * winheight(0) + 32) / 64)
+let s:l = 13 - ((12 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-4
-normal! 02145|
+13
+normal! 01240|
 wincmd w
+2wincmd w
 exe 'vert 1resize ' . ((&columns * 117 + 117) / 234)
 exe 'vert 2resize ' . ((&columns * 116 + 117) / 234)
 tabnext 1
+badd +1 ~/documents/repos/proseminar/references.bib
 badd +6 ~/documents/repos/proseminar/smartphone_issues.tex
-badd +0 ~/documents/repos/proseminar/references.bib
-badd +0 ~/documents/repos/proseminar/future_of_digital_healthcare.tex
+badd +7 ~/documents/repos/proseminar/future_of_digital_healthcare.tex
+badd +19 ~/documents/repos/proseminar/seminar.tex
+badd +6 ~/dotfiles/vim/UltiSnips/bib.snippets
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -407,6 +420,7 @@ if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &so = s:so_save | let &siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
