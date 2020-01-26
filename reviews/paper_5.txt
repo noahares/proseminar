@@ -1,0 +1,7 @@
+abstract is a bit short
+intrudoduction clearly motivates the topic and lays out the structure of the paper
+I like the seperation into study types
+
+====2.2====
+- first part after listing is not very interesting, can be omitted and talk right about result of
+    notification preferences

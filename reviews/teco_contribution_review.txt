@@ -1,0 +1,47 @@
+**/Overall Rating/:
+
+--> Select one of the following ratings:
+----------------------------------------
+	strong reject (-3)
+	reject (-2)
+	weak reject (-1)
+	borderline paper (0)
+	weak accept (1)
+	accept (2)
+	strong accept (3)
+----------------------------------------
+
+**Technical content and scientific rigour:
+
+--> Summarize the following aspects:
+----------------------------------------
+	1. Scientific merit: notably scientific rigour, accuracy and correctness.
+	2. Clarity of expression; communication of ideas; readability and discussion of concepts.
+	3. Sufficient discussion of the context of the work, and suitable referencing. 
+----------------------------------------
+
+**Quality of presentation:
+
+--> Summarize the following aspects:
+----------------------------------------
+	1. Title: Is it adequate and appropriate for the content of the article?
+	2. Abstract: Does it contain the essential information of the article? Is it complete? Is it suitable for inclusion by itself in an abstracting service?
+	3. Motivation: Does the problem considered have a sound motivation? All papers should clearly demonstrate the scientific interest of the results.
+	4. Repetition: Are significant parts of the manuscript repetitive?
+	5. Length: Is the content of the work of sufficient scientific interest to justify its length? 
+	6. Diagrams, figures, tables and captions: Are they essential and clear?
+	7. Text and mathematics: Are they brief but still clear? If you recommend shortening, please suggest what should be omitted.
+	8. Conclusion: Does the paper contain a carefully written conclusion, summarizing what has been learned and why it is interesting and useful?
+----------------------------------------
+
+**/Contributions/:
+
+--> Discuss scientific contributions
+
+**/Strengths/:
+
+--> Discuss the upper aspects (Contributions, Technical content and scientific rigour and Quality of presentation) in more detail (with exact refences into the manuscript)
+
+**/Weaknesses/:
+
+--> Discuss the upper aspects (Contributions, Technical content and scientific rigour and Quality of presentation) in more detail (with exact refences into the manuscript)
