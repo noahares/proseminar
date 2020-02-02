@@ -1,24 +1,57 @@
-Title not very informative
-"Einleitung" = abstract? introduction? both?
-translate terms instead of quoting
-7 resources seem to little, also the format is not very helpful to follow them
-I expect this to be a very unstructured draft without formating
-conclusion missing
-I dont really see a clear path of thought throughout the paper
-some graphics are missing
-the whole paper is rather descriptive and not prospective. While this in itself is not an issue, the
-    title lets one suggest that this paper deals with "management" i.e. action, which is does clearly
-    not. Something like "Finding culprits and intervention points in MAM" would be more suiting
-I like the overall structure of the chapters with introduction and evaluation seperated
-spellchecker
+**/Overall Rating/: weak accept (1)
+
+**Technical content and scientific rigour:
+    1. Scientific merit: Your work is coherent in its content and provides a good summary of the key
+issues of mobile attention management
+    2. Clarity of expression: The ideas are well comunicated and understandable. I cannot see a
+clear path of thought throughout your paper, tho
+    3. Sufficient discussion: The discussion would most likely happen in the conclusion... otherwise
+the paper is rather descriptive
+
+**Quality of presentation:
+
+    1. Title: The title is not very informative and and does not tell how your paper covers the
+topic
+    2. Abstract: Missing
+    3. Motivation: The introduction states clearly why this topic is interesting
+    4. Repetition: The work is not repetetive as each topic is dealt with in its own chapter without
+much interesecting
+    5. Length: The paper is very short. I expect you will fill in more details for the final version
+    6. Figures: Some graphics are referenced but not shown. The ones that are visible are well
+chosen
+    7. Text: Most technical terms (e.g. Short-Term Sensory Store, Breakpoints) have valid german
+translations which might be better suited. The quotation in "Information Overflow" from Mehrotra et
+al. could be logically translated. To give more information about breakpoints you could tell a bit
+about the natural breakpoints that arise in approximately 40min intervalls. Also FoMo could be set
+into biological/sociological context.
+    8. Conclusion: Missing
+
+**/Scientific contribution/:
+Your work does provide a good introduction to mobile attention management. FoMo and Breakpoints could be more
+elaborated as you only poke at the surface of this topic. With a carefully written conclusion, the
+work could be a good primer for diving into the topics.
+
+**/Strenghts/:
+I like the overall structure of the chapters with clearly seperated introduction
+followed by the scientific content. The grahics are informative and not disturbing. Your motivation
+is clearly formulated in the introduction and gets the reader interrested in the topic.
+
+**/Weaknesses/:
+I expect this to a an unformated draft for the final paper, as subsections are not bold, there is
+no numbering and the last section of prefMiner has a very small font size. The quoting confuses me, as you sometimes quote the same paper in two consecutive
+sentences. I also think that 7 references are too little to have the content of your paper accepted
+and the format gives very little information about the sources.
+The title could be better chosen to match your intentions (something along "finding issues and
+intervention points in mobile attention management"). Also, use a spellchecker. The missing abstract
+and conclusion make it difficult to judge the quality of the paper as a whole.
+
+===========
+Below are some recommendations for further content that might be interesting for your paper. I do
+not claim that they are accurate, but the general idea should help you find material that deals with
+those topics
+
 ====Information overflow====
 - chunks, what is our capacity?
--
-
-====Benachrichtigungen====
-- subsections instead of hard to see section names with ":"
-- graphic reference broken
-- why is the last section of prefMiner so small?
 
 ====Breakpoints====
 - vulnerability for breakpoints: naturally after ~40min

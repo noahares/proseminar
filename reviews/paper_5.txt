@@ -1,7 +1,48 @@
-abstract is a bit short
-intrudoduction clearly motivates the topic and lays out the structure of the paper
-I like the seperation into study types
+**/Overall Rating/: accept (2)
 
-====2.2====
-- first part after listing is not very interesting, can be omitted and talk right about result of
-    notification preferences
+**Technical content and scientific rigour:
+    1. Scientific merit:
+        This paper, as a summary and overview of other papers, seems very accurate and scientific
+rigour. This speaks for the qualitiy of the papers mentioned as well as your ability to summerize
+them.
+    2. Clarity of expression: The readability suffers at some points due to long sentences and
+subsentences, otherwise the ideas are well communicated. Discussion falls a bit short, as the papers
+and your summary are more descriptive rather than evaluating, which is not a problem in the context
+of your paper (except the conclusion)
+    3. The referencing is well done. I never felt like I didnt know where a piece of information
+came from. The discussion, as stated in 2., fell a bit short
+
+**Quality of presentation:
+    1. Titel: The title could include your goal to give an overview over other paper
+    2. Abstract: While it is a bit short, it gives a good expectation of your content
+    3. Motivation: The motivation in your introduction is well done. I clearly understood why this
+topic is important and what the goal of you paper is
+    4. Repetition: The paper is not very repetitive. The studies often deal with similar content,
+but differ enough to not feel repetitive
+    5. Length: The length is justified. At some points you could omit statistics and jump right to
+the result. You also could omit one study that is very similar to another
+    6. Figures: The figures are well chosen and dont feel disturbing to the reader
+    7. Text: As mentioned in 5., you can omit e.g. the first part after the listing in 2.2. and talk
+right away about resulting notification preferences. Another point is the frequent and confusing use
+of "the" before smartphone and smartwatch in 2.7.
+    8. Conclusion: The conclusion sums up the main results of the evaluated studies, but falls short
+of stating why it is interesting and useful (especially the framework part)
+
+**/Contrubution/:
+Your work provides a great overview of notification preferences and frameworks that try to meet
+them.
+
+**/Strengths/:
+The papers you have chosen to mention seem well done and your summaries highlight the most important
+aspects. I like the seperation into study types. The quotation is well done and I had no problem
+with telling where a piece of information came from. The order of the papers you mention is good.
+The steps from general multi-notification environments to user preferences make it easy to follow
+your writing.
+
+**/Weaknesses/:
+As stated before, you could give an opinion on the frameworks in your conclusion. This would round
+up the paper and brings in your own contribution to the topic. Your short abstract could be expanded
+by mentioning consideration of dynamic user preferences and the frameworks.
+
+
+
