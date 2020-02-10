@@ -1,5 +1,7 @@
 \documentclass[xcolor=dvipsnames, aspectratio=1610]{beamer}
 \usetheme{Metropolis}
+\usepackage{hyperref}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 
 \title{The Future of Healthcare in a Digitized World}
 \author{Noah Wahl}
@@ -8,7 +10,7 @@
 
 \frame{\titlepage}
 
-\begin{frame}
+\begin{frame}{Table of Contents}
     \tableofcontents
 \end{frame}
 
@@ -17,8 +19,8 @@
 
 \begin{frame}{\secname}
     \begin{itemize}[<+->]
-        \item Healthcare environments slowly adapted to digitization
-        \item Chronic and age-related diseases weight heavy on public healthcare
+        \item Healthcare environments slowly adapted to digitization \cite{industryDigitalization}
+        \item Chronic and age-related diseases weight heavy on public healthcare \cite{sambamoorthi2015multiple}
         \item Mobile Healthcare has become a large market
         \item AI and ML are emerging in healthcare environments
         \item Value-based healthcare looks very promising
@@ -28,22 +30,16 @@
 \section{The Current State of (Digital) Healthcare}%
 \label{sec:the_current_state_of_digital_healthcare}
 
-\subsection{Costs}%
-\label{sub:costs}
-
-\begin{frame}{\secname\ | \subsecname}
+\begin{frame}{\secname}
     \centering
     \includegraphics[width=\textwidth]{../media/Screenshot_2020-01-09_01_FULL_REPORT-World_healthcare_and.png} \\
-    \small{Healthcare spending around the world}
+    \small{Healthcare spending around the world \cite{EIU2016}}
 \end{frame}
 
-\subsection{Risks}%
-\label{sub:risks}
-
-\begin{frame}{\secname\ | \subsecname}
+\begin{frame}{\secname}
     \centering
     \includegraphics[height=0.8\textheight]{../media/doctor_handwriting.jpg} \\
-    \small{This is overplaying the reality, but...}
+    \small{This is overplaying the reality, but... \cite{docHandwriting}}
 \end{frame}
 
 \section{Smartphones as Digital Healthcare Devices}%
@@ -54,8 +50,8 @@
         \item Always with us
         \item Many people have activity trackers
         \item Immediate feedback through companion apps
-        \item Sensors go as far as monitoring blood sugar levels
-        \item Mental health services are rarely well implemented
+        \item Sensors go as far as monitoring blood sugar levels \cite{glucoseTracker}
+        \item Mental health services are rarely well implemented \cite{torous2017needed}
     \end{itemize}
 \end{frame}
 
@@ -64,9 +60,9 @@
 
 \begin{frame}{\secname}
     \begin{itemize}[<+->]
-        \item Smartphones use up our cognitive resources
-        \item Underlying biological cause (oversaturation of dopamine and pro-social society)
-        \item Children and young adults are at a high risk of lasting damage through wrong use of technology
+        \item Smartphones use up our cognitive resources \cite{ward2017brain}
+        \item Underlying biological cause (oversaturation of dopamine receptors \cite{nieoullon2002dopamine, dopamineRole} and pro-social society \cite{sapiens})
+        \item Children and young adults are at a high risk of lasting damage through wrong use of technology \cite{crone2018media}
     \end{itemize}
 \end{frame}
 
@@ -78,11 +74,11 @@
 
 \begin{frame}{\secname\ | \subsecname}
     \begin{itemize}[<+->]
-        \item Huge amounts of patient data
-        \item Stored in data centers with varying levels of security
-        \item Need common data representations, local and regional standards
-        \item This allows secure protocols for transportation and analysis in real-time
-        \item For IoT environments with their tight resource-constraints this requires further messurements, e.g. scaling key management solutions
+        \item Huge amounts of patient data \cite{gopal2019digital}
+        \item Stored in data centers with varying levels of security \cite{patil2014big}
+        \item Need common data representations, local and regional standards \cite{patil2014big}
+        \item This allows secure protocols for transportation and analysis in real-time \cite{patil2014big}
+        \item For IoT environments with their tight resource-constraints this requires further messurements, e.g. scaling key management solutions \cite{patil2014big}
         \item Data should be anonymized prior to analytics
     \end{itemize}
 \end{frame}
@@ -92,11 +88,11 @@
 
 \begin{frame}{\secname\ | \subsecname}
     \begin{itemize}[<+->]
-        \item More and more AI-based algorithms are accepted by healthcare administrations
-        \item Use is limited due to lack of suitable dat, e.g. image processing software for cancer detection
+        \item More and more AI-based algorithms are accepted by healthcare administrations \cite{fdaAi}
+        \item Use is limited due to lack of suitable data, e.g. image processing software for cancer detection \cite{kiKroenung}
         \item Google, Apple and Co. have the algorithms as well as the data
-        \item Their devices have all the information they need from body sensors and in future, implants, to find immediate solutions or get feedback from similar cases from a data center
-        \item Implants include blood glucose monitoring devices that release insulin into the bloodstream accordingly
+        \item Their devices have all the information they need from body sensors and in future, implants, to find immediate solutions or get feedback from similar cases from a data center \cite{kiKroenung}
+        \item Implants include blood glucose monitoring devices that release insulin into the bloodstream accordingly \cite{rege2017development}
         \item AI-based medical services outside of traditional healthcare environments are likely to be the future
     \end{itemize}
 \end{frame}
@@ -106,12 +102,12 @@
 
 \begin{frame}{\secname\ | \subsecname}
     \begin{itemize}[<+->]
-        \item Our leading killers are almost exclusively incommutable diseases which account for around 75\% of global health expenditure
+        \item Our leading killers are almost exclusively incommutable diseases which account for around 75\% of global health expenditure \cite{tsiachristas2016financial}
         \item These diseases do not kill their victims until several years after diagnosis
         \item Living with these diseases has not only an effect of peoples physical well-being, but also their mental health
-        \item Value-based healthcare seeks to prevent these diseases and even if they occur, create value from healthcare outcomes relative to the costs of the treatment
+        \item Value-based healthcare seeks to prevent these diseases and even if they occur, create value from healthcare outcomes relative to the costs of the treatment \cite{putera2017redefining}
         \item Digitization comes to play here as a tool to educate medical professionals as well as individuals about preventive measurements to achieve better health outcomes
-        \item To give recommendations weight, AI is used in studies and clinical trials to detect correlation and causation that human analytics may oversee
+        \item To give recommendations weight, AI is used in studies and clinical trials to detect correlation and causation that human analytics may oversee \cite{rehme2014identifying}
     \end{itemize}
 \end{frame}
 
@@ -130,4 +126,8 @@
 
 %references
 
+\begin{frame}[allowframebreaks]{References}
+    \bibliographystyle{abbrv}
+    \bibliography{references}
+\end{frame}
 \end{document}
