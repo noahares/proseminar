@@ -1,7 +1,10 @@
 \documentclass[xcolor=dvipsnames, aspectratio=1610]{beamer}
 \usetheme{Metropolis}
 \usepackage{hyperref}
+\usepackage{pgfpages}
 \setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeameroption{show notes}
+\setbeameroption{show notes on second screen=right}
 
 \title{The Future of Healthcare in a Digitized World}
 \author{Noah Wahl}
@@ -35,12 +38,22 @@
     \includegraphics[width=\textwidth]{../media/Screenshot_2020-01-09_01_FULL_REPORT-World_healthcare_and.png} \\
     \small{Healthcare spending around the world \cite{EIU2016}}
 \end{frame}
+\note[itemize]{
+    \item \$7 trillion in 2015, \$8.7 trillion in 2020
+    \item 700 deaths and \$21 billion from adverse drug events in the US
+}
+
 
 \begin{frame}{\secname}
     \centering
     \includegraphics[height=0.8\textheight]{../media/doctor_handwriting.jpg} \\
     \small{This is overplaying the reality, but... \cite{docHandwriting}}
 \end{frame}
+
+\note[itemize]{
+\item 1 out of 6 words illegible
+\item misdiagnosis 225.000 deaths each year in US
+}
 
 \section{Smartphones as Digital Healthcare Devices}%
 \label{sec:smartphones_as_digital_healthcare_devices}
@@ -55,6 +68,8 @@
     \end{itemize}
 \end{frame}
 
+\note{apps offer real-time capture of environmental context, others try intervention strategies}
+
 \section{Smartphones as Digital Health Inhibitors}%
 \label{sec:smartphones_as_digital_health_inhibitors}
 
@@ -65,6 +80,8 @@
         \item Children and young adults are at a high risk of lasting damage through wrong use of technology \cite{crone2018media}
     \end{itemize}
 \end{frame}
+
+\note{prefrontal cortex only fully developed at age 25}
 
 \section{The Future of Digital Healthcare}%
 \label{sec:the_future_of_digital_healthcare}
@@ -83,6 +100,13 @@
     \end{itemize}
 \end{frame}
 
+\note[itemize]{
+\item many manufacturers of IoT devices send them out with default settings that are not changed by the buyers
+\item imagine WannaCry-like attack with IoT devices
+\item WannaCry hit the UKs NHS hospitals with 70.000 devices including computers, MRI scanners and blood-storage refrigerators
+\item PKI has to be automated to manage certificates on this scale
+}
+
 \subsection{Individually Tailored Care}%
 \label{sub:individually_tailored_care}
 
@@ -97,6 +121,11 @@
     \end{itemize}
 \end{frame}
 
+\note[itemize]{
+\item most are in radiology and cardiology
+\item AI-based medical services will be patient driven and provided by big companies on the private market
+}
+
 \subsection{Value-Based Healthcare}%
 \label{sub:value_based_healthcare}
 
@@ -110,6 +139,8 @@
         \item To give recommendations weight, AI is used in studies and clinical trials to detect correlation and causation that human analytics may oversee \cite{rehme2014identifying}
     \end{itemize}
 \end{frame}
+
+\note{Studies that use ML methods to assist stroke diagnosis reach accuracy of almost 90\%}
 
 \section{Conclusion}%
 \label{sec:conclusion}
