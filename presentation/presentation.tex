@@ -39,8 +39,8 @@
     \small{Healthcare spending around the world \cite{EIU2016}}
 \end{frame}
 \note[itemize]{
-    \item \$7 trillion in 2015, \$8.7 trillion in 2020
-    \item 700 deaths and \$21 billion from adverse drug events in the US
+\item \$7 trillion in 2015, \$8.7 trillion in 2020
+\item 700 deaths and \$21 billion from adverse drug events in the US
 }
 
 
@@ -96,16 +96,17 @@
         \item Need common data representations, local and regional standards \cite{patil2014big}
         \item This allows secure protocols for transportation and analysis in real-time \cite{patil2014big}
         \item For IoT environments with their tight resource-constraints this requires further messurements, e.g. scaling key management solutions \cite{patil2014big}
+            \note{
+                many manufacturers of IoT devices send them out with default settings that are not changed by the buyers \\
+                imagine WannaCry-like attack with IoT devices \\
+                WannaCry hit the UKs NHS hospitals with 70.000 devices including computers, MRI scanners and blood-storage refrigerators \\
+                PKI has to be automated to manage certificates on this scale
+            }
         \item Data should be anonymized prior to analytics
     \end{itemize}
 \end{frame}
 
-\note[itemize]{
-\item many manufacturers of IoT devices send them out with default settings that are not changed by the buyers
-\item imagine WannaCry-like attack with IoT devices
-\item WannaCry hit the UKs NHS hospitals with 70.000 devices including computers, MRI scanners and blood-storage refrigerators
-\item PKI has to be automated to manage certificates on this scale
-}
+
 
 \subsection{Individually Tailored Care}%
 \label{sub:individually_tailored_care}
@@ -113,18 +114,18 @@
 \begin{frame}{\secname\ | \subsecname}
     \begin{itemize}[<+->]
         \item More and more AI-based algorithms are accepted by healthcare administrations \cite{fdaAi}
+        \note{
+            most are in radiology and cardiology \\
+            AI-based medical services will be patient driven and provided by big companies on the private market
+        }
         \item Use is limited due to lack of suitable data, e.g. image processing software for cancer detection \cite{kiKroenung}
         \item Google, Apple and Co. have the algorithms as well as the data
-        \item Their devices have all the information they need from body sensors and in future, implants, to find immediate solutions or get feedback from similar cases from a data center \cite{kiKroenung}
+        \item Devices have all the information they need from body sensors to find immediate solutions or get feedback from similar cases from a data center \cite{kiKroenung}
         \item Implants include blood glucose monitoring devices that release insulin into the bloodstream accordingly \cite{rege2017development}
         \item AI-based medical services outside of traditional healthcare environments are likely to be the future
     \end{itemize}
 \end{frame}
 
-\note[itemize]{
-\item most are in radiology and cardiology
-\item AI-based medical services will be patient driven and provided by big companies on the private market
-}
 
 \subsection{Value-Based Healthcare}%
 \label{sub:value_based_healthcare}
@@ -134,9 +135,9 @@
         \item Our leading killers are almost exclusively incommutable diseases which account for around 75\% of global health expenditure \cite{tsiachristas2016financial}
         \item These diseases do not kill their victims until several years after diagnosis
         \item Living with these diseases has not only an effect of peoples physical well-being, but also their mental health
-        \item Value-based healthcare seeks to prevent these diseases and even if they occur, create value from healthcare outcomes relative to the costs of the treatment \cite{putera2017redefining}
-        \item Digitization comes to play here as a tool to educate medical professionals as well as individuals about preventive measurements to achieve better health outcomes
-        \item To give recommendations weight, AI is used in studies and clinical trials to detect correlation and causation that human analytics may oversee \cite{rehme2014identifying}
+        \item Value-based healthcare seeks to create value from healthcare outcomes relative to the costs of the treatment \cite{putera2017redefining}
+        \item Digitization as a tool to educate medical professionals as well as individuals about preventive measurements to achieve better health outcomes
+        \item AI and ML are used in studies and clinical trials to detect correlation and causation that human analytics may oversee \cite{rehme2014identifying}
     \end{itemize}
 \end{frame}
 
